@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "langchain-course"
+version = "0.1.0"
+description = "LangChain course project"
+authors = ["Gabriel Moraes"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.13"
+langchain = "^0.3.13"
+python-dotenv = "^1.0.1"
+langchain-openai = "^0.2.14"
+openai = "^1.58.1"
+langchain-google-genai = "^2.0.7"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
