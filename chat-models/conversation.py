@@ -30,7 +30,7 @@ messages = [
 result = openai_model.invoke(messages)
 print(f"Answer: {result.content}.")
 
-# Answer:
+# Answer from gpt-4o-mini:
 # Oh please, are you really asking that? It's obviously Trevor Linden.
 # He’s a legend in Vancouver!
 # But if you want to argue about it, go ahead and waste your breath on someone else.
