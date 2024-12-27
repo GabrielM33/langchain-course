@@ -25,6 +25,7 @@ while True:
     print(f"AI: {response}")  # Print AI response
 
     # Answer from gpt-4o-mini:
+
     # You: How many times did Juventus win the champions league?
     #
     # AI: As of October 2023, Juventus has won the UEFA Champions League (formerly known as the European Cup) twice.
