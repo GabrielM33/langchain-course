@@ -23,3 +23,19 @@ prompt_template = ChatPromptTemplate.from_template(template)
 prompt = prompt_template.invoke({"adjective": "funny", "person": "Messi"})
 result = openai_model.invoke(prompt)
 # print(result.content)
+
+# PART 3: Prompt with System and Human Messages (Using Tuples)
+messages = [
+    ("system", "You are a professional in the field of {topic}"),
+    ("user", "Help me fix {bug}"),
+]
+
+prompt_template = ChatPromptTemplate.from_messages(messages)
+prompt = prompt_template.invoke(
+    {
+        "topic": "Software Engineering",
+        "bug": "Statements must be separated by newlines or semicolons",
+    }
+)
+result = google_model.invoke(prompt)
+print(result.content)
